@@ -64,6 +64,7 @@
 	<!-- 配置mybitas SqlSessionFactoryBean -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:mybatis-config.xml" /> 
 	</bean>
 
 	<!-- 依赖注入自动加载所有映射类 -->
